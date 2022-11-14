@@ -37,7 +37,7 @@ body{
 }
 .Icon{
     text-align: center;
-    color: #124655;
+    color: #134350;
 }
 .User-form input{
     width: 100%;
@@ -135,7 +135,7 @@ body{
     max-width: 500px;
     padding: .7rem;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 10px;
 
     display: flex;
@@ -149,7 +149,7 @@ body{
     color: #44095e;
 }
 .User-card-data p{
-    font-size: .8rem;
+    font-size: 1rem;
 }
 .User-card-btns{
    display: grid;
@@ -159,12 +159,14 @@ body{
     margin-right: .3rem;
     border: none;
     background-color: transparent;
-    color: #124655;
+    color: #134350;
+    font-size: 1rem;
 }
 .Delete-btn{
     border: none;
     background-color: transparent;
     color: rgb(170, 2, 2);
+    font-size: 1rem;
 }
 
 .Modal-container{
