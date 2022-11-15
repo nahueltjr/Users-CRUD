@@ -136,6 +136,7 @@ body{
     padding: .7rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    font-weight: 500;
     border-radius: 10px;
 
     display: flex;
@@ -146,10 +147,11 @@ body{
    overflow-x: scroll;
 }
 .User-card-data h4{
-    color: #44095e;
+    color: #450461;
 }
 .User-card-data p{
     font-size: 1rem;
+    color: rgb(80, 79, 79);
 }
 .User-card-btns{
    display: grid;
@@ -273,10 +275,9 @@ body{
         height: 50px;
     }
     .User-card{
-        max-width: 700px;
+        max-width: 550px;
         padding: 1.2rem;
         font-size: 1.5rem;
-
         grid-template-columns: 90% auto;
     }
 
@@ -311,6 +312,9 @@ body{
     .User-card{
         padding: 1.5rem 2rem;
         margin-bottom: 2rem;
+    }
+    .Upload-btn{
+        margin-top: 1rem;
     }
     
     
