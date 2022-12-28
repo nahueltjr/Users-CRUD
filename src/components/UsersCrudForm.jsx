@@ -22,11 +22,11 @@ const UsersCrudForm = ({getUsersList,selectedUser,deselectUser,showModal}) => {
 
     const submit = data =>{
         if(selectedUser){
-            axios.put(`https://users-crud1.herokuapp.com/users/${selectedUser.id}/`,data)
+            axios.put(`https://users-crud.academlo.tech/users/${selectedUser.id}/`,data)
             .then(()=>getUsersList(), deselectUser(),showModal("User updated"))
             .catch(error => console.log(error.response?.data))
         }else{
-            axios.post("https://users-crud1.herokuapp.com/users/",data)
+            axios.post("https://users-crud.academlo.tech/users/",data)
             .then(()=>getUsersList(),showModal("User created"))
             .catch(error =>console.log(error.response?.data))
             reset({

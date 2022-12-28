@@ -12,12 +12,12 @@ function App() {
   const[modalText, setModalText]=useState("")
 
   useEffect(()=>{
-    axios.get("https://users-crud1.herokuapp.com/users/")
+    axios.get("https://users-crud.academlo.tech/users/")
     .then(res=>setUsersList(res.data))
   },[])
 
   const getUsersList = () =>{
-    axios.get("https://users-crud1.herokuapp.com/users/")
+    axios.get("https://users-crud.academlo.tech/users/")
     .then(res=>setUsersList(res.data))
   }
 
@@ -27,7 +27,7 @@ function App() {
   const deselectUser = () => setSelectedUser(null)
 
   const deleteUser = id =>{
-    axios.delete(`https://users-crud1.herokuapp.com/users/${id}/`)
+    axios.delete(`https://users-crud.academlo.tech/users/${id}/`)
     .then(()=>getUsersList(),showModal("User deleted"))
     .catch(error => console.log(error.response?.data)) 
   }
